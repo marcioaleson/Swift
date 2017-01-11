@@ -56,5 +56,24 @@ let oneMillion = 1_000_000
 print(oneMillion)
 let justOverOneMillion = 1_000_000.000_000_1
 print(justOverOneMillion)
+//Integer conversion
+let twoThousand: UInt16 = 2_000
+let one: UInt8 = 1
+let twoThousandAndOne = twoThousand + UInt16(one)
+print(twoThousandAndOne)
+//Integer to Float
+let three = 3
+let pointOneFourOneFiveNine = 0.14159
+let piDouble = Double(three) + pointOneFourOneFiveNine
+print(piDouble)
+let integerPI = Int(piDouble)
+print(integerPI)
+//Type aliases
+typealias AudioSample = UInt16
+var maxAmplitudeFound = AudioSample.min // UInt16.min = 0
+print(maxAmplitudeFound)
+
+
+
 
 
