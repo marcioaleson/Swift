@@ -32,3 +32,19 @@ var c = 1
 print(c)
 c += 1
 print(c)
+//Comparesion Operators
+print(1==1)
+print(1 != 2)
+print(1>3)
+print(1<2)
+print(1>=2)
+print(1<=2)
+let name = "World"
+if name == "World" {
+    print("Hello \(name)")
+}else{
+    print("I'm sorry \(name), but I don't recognize you")
+}
+print((1,"zebra") < (2,"apple"))
+print((3, "apple") < (3,"apple"))
+print((4, "dog") == (4, "dog"))
