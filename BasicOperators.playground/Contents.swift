@@ -48,3 +48,16 @@ if name == "World" {
 print((1,"zebra") < (2,"apple"))
 print((3, "apple") < (3,"apple"))
 print((4, "dog") == (4, "dog"))
+print("Ternary Conditional Operator")
+let contentHeight = 40
+let hasHeader = true
+let rowHeight = contentHeight + (hasHeader ? 50 : 20)
+print("Nil-Coalescing Operator")
+let defaultColorName = "red"
+var userDefinedColorName: String? //Default to nil
+var colorNameToUse = userDefinedColorName ?? defaultColorName //userDefinedColorName is nil, so colorNameToUse is set to the default of "red"
+print("The colorNameToUse is set to \(colorNameToUse) now")
+userDefinedColorName = "green"
+colorNameToUse = userDefinedColorName ?? defaultColorName //userDefinedColorName is not nil, so colorNameToUse is set to "green"
+print("The colorNameToUse is set to \(colorNameToUse) now")
+
