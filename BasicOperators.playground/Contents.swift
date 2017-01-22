@@ -60,4 +60,42 @@ print("The colorNameToUse is set to \(colorNameToUse) now")
 userDefinedColorName = "green"
 colorNameToUse = userDefinedColorName ?? defaultColorName //userDefinedColorName is not nil, so colorNameToUse is set to "green"
 print("The colorNameToUse is set to \(colorNameToUse) now")
+print("Range Operators")
+for index in 1...5{
+    print("\(index) times in is \(index*5)")
+}
+let names = ["Anna", "Alex", "Brian", "Jack"]
+let count = names.count
+for i in 0..<count{
+    print("Person \(i + 1) is called \(names[i])")
+}
+print("Logical Operators")
+let allowedEntry = false
+if !allowedEntry {
+    print("ACCESS DENIED")
+}
+let enteredDoorCode = true
+let passedRetinaScan = false
+if enteredDoorCode && passedRetinaScan {
+    print("Welcome!")
+} else {
+    print("ACCESS DENIED!")
+}
+let hasDoorkey = false
+let knowsOverridePassword = true
+if hasDoorkey || knowsOverridePassword {
+    print("Welcome!")
+} else {
+    print("ACCESS DENIED")
+}
+if enteredDoorCode && passedRetinaScan || hasDoorkey || knowsOverridePassword {
+    print("Welcome!")
+} else {
+    print("ACCESS DENIED!")
+}
+if (enteredDoorCode && passedRetinaScan) || hasDoorkey || knowsOverridePassword {
+    print("Welcome!")
+} else {
+    print("ACCESS DENIED!")
+}
 
