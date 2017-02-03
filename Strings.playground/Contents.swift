@@ -47,6 +47,24 @@ let blackHeart = "\u{2665}"
 print(blackHeart)
 let sparklingHeart = "\u{1F496}"
 print(sparklingHeart)
+let eAcute: Character = "\u{E0}"
+print(eAcute)
+let combinedEAcute: Character = "\u{65}\u{301}"
+print(combinedEAcute)
+let precomposed: Character = "\u{D55C}"
+print(precomposed)
+let decomposed: Character = "\u{1112}\u{1161}\u{11AB}"
+print(decomposed)
+let enclosedEAcute: Character = "\u{E9}\u{20DD}"
+print(enclosedEAcute)
+let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"
+print(regionalIndicatorForUS)
+let unusualMenagerie = "Koala 🐨, Snail 🐌, Penguin 🐧, Dromedary 🐪"
+print("unusualMenagerie has \(unusualMenagerie.characters.count) characters")
+var word = "cafe"
+print("the number of character in \(word) is \(word.characters.count)")
+
+
 
 
 
