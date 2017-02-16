@@ -63,7 +63,12 @@ let unusualMenagerie = "Koala 🐨, Snail 🐌, Penguin 🐧, Dromedary 🐪"
 print("unusualMenagerie has \(unusualMenagerie.characters.count) characters")
 var word = "cafe"
 print("the number of character in \(word) is \(word.characters.count)")
-
+//String Indices
+let greeting = "Guten Tag!"
+print(greeting[greeting.startIndex])
+print(greeting[greeting.index(before: greeting.endIndex)])
+print(greeting[greeting.index(after: greeting.startIndex)])
+let index = [greeting.index(greeting.startIndex, offsetBy: 7)]
 
 
 
