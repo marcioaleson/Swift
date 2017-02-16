@@ -69,6 +69,13 @@ print(greeting[greeting.startIndex])
 print(greeting[greeting.index(before: greeting.endIndex)])
 print(greeting[greeting.index(after: greeting.startIndex)])
 let index = [greeting.index(greeting.startIndex, offsetBy: 7)]
+//Erro when you try access an index outside of string's range
+//print(greeting[greeting.endIndex])
+//print(greeting.index(after: greeting.endIndex))
+for index in greeting.characters.indices {
+    print("\(greeting[index])", terminator: "")
+}
+
 
 
 
