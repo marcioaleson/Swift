@@ -75,6 +75,39 @@ let index = [greeting.index(greeting.startIndex, offsetBy: 7)]
 for index in greeting.characters.indices {
     print("\(greeting[index])", terminator: "")
 }
+//Insert and remove
+var welcome2 = "hello"
+welcome2.insert("!", at: welcome2.endIndex)
+print(welcome2)
+welcome2.insert(contentsOf:" there".characters, at: welcome2.index(before: welcome2.endIndex))
+print(welcome2)
+welcome2.remove(at: welcome.index(before: welcome.endIndex))
+print(welcome2)
+let range = welcome2.index(welcome2.endIndex, offsetBy: -6)..<welcome2.endIndex
+welcome2.removeSubrange(range)
+print(welcome2)
+//Comparing Strings
+let quotation = "We're a lot alike, you and I."
+let sameQuotation = "We're a lot alike, you and I."
+if quotation == sameQuotation{
+    print("These two strings are considered equal")
+}
+let eAcuteQuestion = "Voulez-vous un caf\u{E9}?"
+let combinedEAcuteQuestion = "Voulez-vous un caf\u{65}\u{301}?"
+
+if eAcuteQuestion == combinedEAcuteQuestion{
+    print("These two strings are considered equal")
+}
+let latinCapitalLetterA: Character = "\u{41}"
+let cyrillicCapitalLetterA: Character = "\u{0410}"
+if latinCapitalLetterA != cyrillicCapitalLetterA{
+    print("These are two character are not equivalent.")
+}
+
+
+
+
+
 
 
 
